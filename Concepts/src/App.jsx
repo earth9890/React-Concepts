@@ -4,6 +4,7 @@ import ToDoListFnAsProp from "./Componets/ToDoParent";
 import HelloWorld from "./Componets/HelloWorld";
 import UseState from "./Componets/UseState";
 import ConditionalRendering from "./Componets/ConditionalRendering";
+import RenderAList from "./Componets/RenderAList";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
       <UseState />
       <ToDoListFnAsProp />
       <ConditionalRendering />
+      <RenderAList />
     </>
   );
 }
