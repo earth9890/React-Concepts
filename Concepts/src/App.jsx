@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import ToDoListFnAsProp from "./Componets/ToDoParent";
 import HelloWorld from "./Componets/HelloWorld";
 import UseState from "./Componets/UseState";
 
@@ -10,7 +11,8 @@ function App() {
   return (
     <>
       <HelloWorld />
-      <UseState/>
+      <UseState />
+      <ToDoListFnAsProp />
     </>
   );
 }
