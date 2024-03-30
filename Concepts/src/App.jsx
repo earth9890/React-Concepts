@@ -9,6 +9,7 @@ import FormHandling from "./Componets/FormHandling";
 import UseEffect from "./Componets/UseEffect";
 import ReactFragment from "./Componets/ReactFragment";
 import Memo from "./Componets/Memo";
+import UseRef from "./Componets/UseRef";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,6 +25,7 @@ function App() {
       <UseEffect />
       <ReactFragment />
       <Memo name="Its a prop it will only render if prop changed" />
+      <UseRef />
     </>
   );
 }
