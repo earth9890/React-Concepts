@@ -7,6 +7,7 @@ import ConditionalRendering from "./Componets/ConditionalRendering";
 import RenderAList from "./Componets/RenderAList";
 import FormHandling from "./Componets/FormHandling";
 import UseEffect from "./Componets/UseEffect";
+import ReactFragment from "./Componets/ReactFragment";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,7 @@ function App() {
       <RenderAList />
       <FormHandling />
       <UseEffect />
+      <ReactFragment />
     </>
   );
 }
