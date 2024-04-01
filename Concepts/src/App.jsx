@@ -10,10 +10,14 @@ import UseEffect from "./Componets/UseEffect";
 import ReactFragment from "./Componets/ReactFragment";
 import Memo from "./Componets/Memo";
 import UseRef from "./Componets/UseRef";
+import {
+  HigherOrderComponents,
+  withUpperCase,
+} from "./Componets/HigherOrderComponents";
 
 function App() {
   const [count, setCount] = useState(0);
-
+  const EnhancedComponent = withUpperCase(HigherOrderComponents);
   return (
     <>
       <HelloWorld />
@@ -26,6 +30,7 @@ function App() {
       <ReactFragment />
       <Memo name="Its a prop it will only render if prop changed" />
       <UseRef />
+      <EnhancedComponent text="hellow neeraj" />
     </>
   );
 }
