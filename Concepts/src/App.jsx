@@ -15,6 +15,7 @@ import {
   withUpperCase,
 } from "./Componets/HigherOrderComponents";
 import ContextA from "./Componets/ContextA";
+import UseReducer from "./Componets/UseReducer";
 
 export const UserContext = React.createContext();
 function App() {
@@ -36,6 +37,7 @@ function App() {
       <UserContext.Provider value={"Hari"}>
         <ContextA />
       </UserContext.Provider>
+      <UseReducer />
     </>
   );
 }
