@@ -16,6 +16,7 @@ import {
 } from "./Componets/HigherOrderComponents";
 import ContextA from "./Componets/ContextA";
 import UseReducer from "./Componets/UseReducer";
+import UseCallback from "./Componets/UseCallback";
 
 export const UserContext = React.createContext();
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <ContextA />
       </UserContext.Provider>
       <UseReducer />
+      <UseCallback />
     </>
   );
 }
