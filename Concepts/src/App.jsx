@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import ToDoListFnAsProp from "./Componets/ToDoParent";
 import HelloWorld from "./Componets/HelloWorld";
@@ -14,7 +14,9 @@ import {
   HigherOrderComponents,
   withUpperCase,
 } from "./Componets/HigherOrderComponents";
+import ContextA from "./Componets/ContextA";
 
+export const UserContext = React.createContext();
 function App() {
   const [count, setCount] = useState(0);
   const EnhancedComponent = withUpperCase(HigherOrderComponents);
@@ -31,6 +33,9 @@ function App() {
       <Memo name="Its a prop it will only render if prop changed" />
       <UseRef />
       <EnhancedComponent text="hellow neeraj" />
+      <UserContext.Provider value={"Hari"}>
+        <ContextA />
+      </UserContext.Provider>
     </>
   );
 }
