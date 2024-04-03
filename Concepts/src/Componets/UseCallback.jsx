@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useCallback } from "react";
 import Count from "./Count";
+import Button from "./Button";
 
 function UseCallback() {
   const [age, setAge] = useState(25);
@@ -15,10 +16,11 @@ function UseCallback() {
   return (
     <>
       <h1>UseCallBack starts</h1>
-      <Count text="Age" value={age} />
-      <button onClick={incrementAge}>Increment Age</button>
+      <Count text="Age" count={age} />
+      <Button handleClick={incrementAge}>Increment Age</Button>
+
       <Count text="Salary" value={salary} />
-      <button onClick={incrementSalary}>Increment Age</button>
+      <Button handleClick={incrementSalary}>Increment Age</Button>
       <h1>UseCallBack ends</h1>
     </>
   );

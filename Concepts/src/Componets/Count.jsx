@@ -1,13 +1,14 @@
 import React from "react";
 
-function Count(props) {
+function Count({ text, count }) {
+  console.log("Rendering ", text);
   return (
     <>
       <h1>
-        {props.text} = {props.value}
+        {text} = {count}
       </h1>
     </>
   );
 }
 
-export default Count;
+export default React.memo(Count);
