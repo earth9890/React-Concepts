@@ -17,6 +17,7 @@ import {
 import ContextA from "./Componets/ContextA";
 import UseReducer from "./Componets/UseReducer";
 import UseCallback from "./Componets/UseCallback";
+import UseDocumentTitle from "./Componets/UseDocumentTitle";
 
 export const UserContext = React.createContext();
 function App() {
@@ -40,6 +41,7 @@ function App() {
       </UserContext.Provider>
       <UseReducer />
       <UseCallback />
+      <UseDocumentTitle />
     </>
   );
 }
